@@ -1,8 +1,12 @@
 In order to allow scipts to be run in powershell we first need to set the execution policy to allow our auditing scripts to be ran
 
-Open Powershell and start with Get-ExecutionPolicy to confirm the current execution policy. We can also Get-ExecutionPolicy -List
+Open Powershell and start with  
+  
+    Get-ExecutionPolicy  
+    
+to confirm the current execution policy. We can also Get-ExecutionPolicy -List
 
-Set-ExecutionPolicy RemoteSigned
+    Set-ExecutionPolicy RemoteSigned
 
 Restricted — blocks any script file from running.
 
@@ -14,6 +18,6 @@ Unrestricted — runs any script without restrictions.
 
 I tend to save my scripts in C:\Sysmon
 
-Import-Module C:\Sysmon\[Get-Event.psm1]
+    Import-Module C:\Sysmon\[Get-Event.psm1]
 
-Get-Module (to list all running modules)
+    Get-Module (to list all running modules)
